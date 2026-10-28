@@ -1,0 +1,1 @@
+const l=t=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(t),n=(t,c)=>t>c?Math.round((t-c)/t*100):0,o=(t,c=80)=>t&&t.length>c?t.slice(0,c)+"…":t,s=t=>{const c=Math.floor(t),r=t%1>=.5?1:0,a=5-c-r;return[...Array(c).fill("full"),...Array(r).fill("half"),...Array(a).fill("empty")]};export{n as c,l as f,s,o as t};
